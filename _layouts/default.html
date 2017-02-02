@@ -4,8 +4,14 @@
     <body id="page-top" class="index">
     {% include nav.html %}
     {% include header.html %}
-    {% include portfolio_grid.html %}
+
+
+    {% comment %}
+      {% include portfolio_grid.html %}
+    {% endcomment %}
+
     {% include about.html %}
+    {% include team.html %}
 
     {% if site.contact == "static" %}
     {% include contact_static.html %}
