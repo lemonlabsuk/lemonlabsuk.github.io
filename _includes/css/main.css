@@ -377,12 +377,17 @@ footer .btn-outline {
     resize: none;
 }
 
+.form-control::-moz-placeholder { color:#fff; opacity:1; }
+.form-control:-ms-input-placeholder { color:#fff; }
+.form-control::-webkit-input-placeholder { color:#fff; }
+
 .floating-label-form-group label {
     display: block;
     z-index: 0;
     position: relative;
     top: 2em;
     margin: 0;
+    margin-top: 10px;
     font-size: .85em;
     line-height: 1.764705882em;
     vertical-align: middle;
@@ -405,7 +410,12 @@ footer .btn-outline {
 }
 
 .floating-label-form-group-with-focus label {
-    color: #{{ site.color.secondary }};
+    color: #fff;
+}
+
+.btn-success {
+    background-color: #{{ site.color.secondary-dark }};
+    border-color: #{{ site.color.secondary-dark }};
 }
 
 form .row:first-child .floating-label-form-group {
