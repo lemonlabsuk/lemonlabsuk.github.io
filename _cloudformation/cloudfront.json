@@ -52,6 +52,16 @@
               "TargetOriginId": "github",
               "ViewerProtocolPolicy": "redirect-to-https"
             },
+            "CacheBehaviors": [{
+              "AllowedMethods": [ "DELETE", "GET", "HEAD", "OPTIONS", "PATCH", "POST", "PUT" ],
+              "ForwardedValues": {
+                "Headers": ["*"],
+                "QueryString": true
+              },
+              "PathPattern": "/slack*",
+              "TargetOriginId": "slack",
+              "ViewerProtocolPolicy": "redirect-to-https"
+            }],
             "Enabled": true,
             "Origins": [{
               "CustomOriginConfig": {
@@ -59,6 +69,12 @@
               },
               "DomainName": "lemonlabsuk.github.io",
               "Id": "github"
+            },{
+              "CustomOriginConfig": {
+                "OriginProtocolPolicy": "match-viewer"
+              },
+              "DomainName": "lemonlabs-slack-invite-page.herokuapp.com",
+              "Id": "slack"
             }],
             "ViewerCertificate": {
               "AcmCertificateArn": { "Ref": "AcmCertificateArn" },
