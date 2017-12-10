@@ -211,11 +211,11 @@ header .skills a {
 
 }
 
-.navbar-fixed-top .navbar-brand {
+.homepage .navbar-fixed-top .navbar-brand {
   visibility: hidden;
 }
 
-.navbar-fixed-top.navbar-shrink .navbar-brand {
+.homepage .navbar-fixed-top.navbar-shrink .navbar-brand {
   visibility: visible;
 }
 
@@ -255,7 +255,7 @@ header .skills a {
 
 
 
-section {
+.homepage section {
     padding: 100px 0;
 }
 
@@ -547,4 +547,68 @@ footer .footer-below {
 .modal.fade.in {
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
+}
+
+
+ul.clients {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+@media(max-width:875px) {
+  ul.clients {
+    width: 320px;
+  }
+}
+
+@media(max-width:1200px) and (min-width:876px) {
+  ul.clients {
+    width: 640px;
+  }
+}
+
+.main-heading {
+  padding-top: 120px;
+  padding-bottom: 40px;
+}
+
+.project .intro p {
+  padding: 30px 15%;
+}
+
+.project {
+  padding-top: 40px;
+  margin-bottom: 50px;
+}
+
+ul.clients li {
+  display: block;
+  float: left;
+  width: 320px;
+  height: 150px;
+  text-align: center;
+  line-height: 150px;
+}
+
+a.client-logo {
+  border-bottom: none;
+}
+
+ul.clients .client-logo img {
+  width: 250px;
+}
+
+ul.clients .desc {
+  position: relative;
+  top: -150px;
+  line-height: 30px;
+  width: 500px;
+  left: -90px;
+  background: rgb(255, 255, 255);
+  border: 2px solid rgb(130, 203, 69);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: rgb(55, 63, 49) 5px 5px 93px -45px;
+  display: none;
 }

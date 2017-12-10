@@ -1,0 +1,118 @@
+---
+layout: default
+---
+
+<section class="success main-heading">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Opensource</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="project">
+    <div class="container">
+
+        <div class="row intro">
+            <div class="col-lg-12 text-center">
+                <!-- <h3>scala-uri</h3> -->
+                <h2>scala-uri</h2>
+                <hr class="star-primary" />
+                <p>
+                  <a href="https://github.com/lemonlabsuk/scala-uri">scala-uri</a> is is a
+                  small Scala library that helps you work with URIs. It's used by
+                  <a href="https://github.com/search?o=desc&p=1&q=scala-uri+extension%3Asbt&s=indexed&type=Code&utf8=%E2%9C%93">
+                  over 200</a> open source projects on github. Click the logos
+                  below, to see how these companies are using scala-uri.
+                </p>
+            </div>
+        </div>
+
+        <ul class="clients">
+
+          <li>
+              <a class="client-logo" href="https://mesosphere.com/">
+                <img src="/img/meso.svg" />
+              </a>
+              <p class="desc">
+                <a href="https://mesosphere.com/">Mesosphere</a> use scala-uri in
+                Cosmos,the <a href="https://dcos.io/">DC/OS</a> Package Manager.
+              </p>
+          </li>
+
+          <li>
+              <a class="client-logo" href="https://www.theguardian.com">
+                <img src="/img/the_guardian.svg" />
+              </a>
+              <p class="desc">
+                <a href="https://www.theguardian.com">The Guardian</a> use
+                scala-uri in <a href="https://github.com/search?p=1&q=org%3Aguardian+scala-uri&type=Code">
+                a dozen or so projects</a>, including <a href="https://www.theguardian.com">theguardian.com</a>
+                homepage!
+              </p>
+          </li>
+
+          <li>
+              <a class="client-logo" href="https://snowplowanalytics.com/">
+                <img src="/img/snowplow.png" />
+              </a>
+              <p class="desc">
+                <a href="https://snowplowanalytics.com/">Snowplow</a> use scala-uri
+                and their users have helped scala-uri better by
+                <a href="https://github.com/snowplow/snowplow/issues/2893#issuecomment-255866231">
+                raising bugs<a>.
+              </p>
+          </li>
+
+          <li>
+              <a class="client-logo" href="https://www.graph.cool">
+                <img src="/img/graphcool.svg" />
+              </a>
+              <p class="desc">
+                <a href="https://www.graph.cool">Graphcool</a> use
+                scala-uri in their <a href="https://github.com/graphcool/framework/tree/master/server/libs/stub-server">
+                stub-server</a> library.
+              </p>
+          </li>
+
+          <li>
+              <a class="client-logo" href="https://www.algolia.com/">
+                <img src="/img/algolia.svg" />
+              </a>
+              <p class="desc">
+                <a href="https://www.algolia.com/">Algolia</a> use
+                scala-uri in the <a href="https://github.com/algolia/algoliasearch-client-scala">
+                scala client</a> for their search platform.
+              </p>
+          </li>
+
+          <li>
+              <a class="client-logo" href="https://www.indix.com/">
+                <img src="/img/indix.png" />
+              </a>
+              <p class="desc">
+                <a href="https://www.indix.com/">Indix</a> use scala-uri in
+                their <a href="https://github.com/indix/utils">utils</a> library.
+              </p>
+          </li>
+
+        </ul>
+
+        <script type="text/javascript">
+          function hideAll() {
+            $('.clients li .desc').css('display', 'none');
+          }
+          $('body').click(function(e) {
+            hideAll();
+          });
+          $('.client-logo').click(function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            hideAll();
+            $(this).parent().find('.desc').css('display', 'block');
+          });
+        </script>
+
+</section>

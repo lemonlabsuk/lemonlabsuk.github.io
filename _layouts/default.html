@@ -1,21 +1,5 @@
-<!DOCTYPE html>
-<html>
-    {% include head.html %}
-    <body id="page-top" class="index">
-    {% include nav.html %}
-    {% include header.html %}
+{% include page_top.html %}
 
+{{ page.content }}
 
-    {% comment %}
-      {% include portfolio_grid.html %}
-    {% endcomment %}
-
-    {% include about.html %}
-    {% include team.html %}
-
-    {% include contact_static.html %}
-
-    {% include footer.html %}
-    {% include js.html %}
-    </body>
-</html>
+{% include page_bottom.html %}
