@@ -556,9 +556,28 @@ ul.clients {
   padding: 0;
 }
 
+ul.clients .desc {
+  position: relative;
+  top: -150px;
+  line-height: 30px;
+  width: 500px;
+  left: -90px;
+  background: rgb(255, 255, 255);
+  border: 2px solid rgb(130, 203, 69);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: rgb(55, 63, 49) 5px 5px 93px -45px;
+  display: none;
+}
+
 @media(max-width:875px) {
   ul.clients {
     width: 320px;
+  }
+  ul.clients .desc {
+    width: 320px;
+    padding: 10px 40px;
+    left: 0px;
   }
 }
 
@@ -597,20 +616,6 @@ a.client-logo {
 
 ul.clients .client-logo img {
   width: 250px;
-}
-
-ul.clients .desc {
-  position: relative;
-  top: -150px;
-  line-height: 30px;
-  width: 500px;
-  left: -90px;
-  background: rgb(255, 255, 255);
-  border: 2px solid rgb(130, 203, 69);
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: rgb(55, 63, 49) 5px 5px 93px -45px;
-  display: none;
 }
 
 ul.quotes {
