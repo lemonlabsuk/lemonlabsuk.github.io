@@ -612,3 +612,13 @@ ul.clients .desc {
   box-shadow: rgb(55, 63, 49) 5px 5px 93px -45px;
   display: none;
 }
+
+ul.quotes {
+  text-align: center;
+  list-style-type: none;
+  font-style: italic;
+}
+
+ul.quotes li a {
+  font-style: normal;
+}

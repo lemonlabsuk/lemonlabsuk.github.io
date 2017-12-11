@@ -12,6 +12,12 @@
                 <a class="navbar-brand" href="/#page-top"><img src="/img/lemonlabs_logo.svg" /></a>
             </div>
 
+            {% if page.homePath == nil %}
+              {% assign homePath = '/' %}
+            {% else %}
+              {% assign homePath = page.homePath %}
+            {% endif %}
+
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
@@ -19,13 +25,16 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#whatwedo">What we do</a>
+                        <a href="{{ homePath }}#whatwedo">What we do</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#team">The team</a>
+                        <a href="{{ homePath }}#team">The team</a>
+                    </li>
+                    <li>
+                        <a href="/opensource">open source</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#contact">Contact</a>
+                        <a href="{{ homePath }}#contact">Contact</a>
                     </li>
                 </ul>
             </div>
