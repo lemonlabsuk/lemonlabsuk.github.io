@@ -65,7 +65,8 @@
             "Enabled": true,
             "Origins": [{
               "CustomOriginConfig": {
-                "OriginProtocolPolicy": "match-viewer"
+                "OriginProtocolPolicy": "match-viewer",
+                "OriginSSLProtocols": [ "TLSv1.2" ]
               },
               "DomainName": "lemonlabsuk.github.io",
               "Id": "github"
