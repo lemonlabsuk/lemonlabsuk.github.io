@@ -71,7 +71,8 @@
               "Id": "github"
             },{
               "CustomOriginConfig": {
-                "OriginProtocolPolicy": "match-viewer"
+                "OriginProtocolPolicy": "match-viewer",
+                "OriginSSLProtocols": [ "TLSv1.2" ]
               },
               "DomainName": "lemonlabs-slack-invite-page.herokuapp.com",
               "Id": "slack"
