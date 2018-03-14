@@ -43,6 +43,7 @@
        "Properties": {
           "DistributionConfig": {
             "Aliases": [ "lemonlabs.io" ],
+            "IPV6Enabled": true,
             "DefaultCacheBehavior": {
               "AllowedMethods": [ "DELETE", "GET", "HEAD", "OPTIONS", "PATCH", "POST", "PUT" ],
               "ForwardedValues": {

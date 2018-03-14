@@ -557,8 +557,8 @@ ul.clients {
 }
 
 ul.clients .desc {
-  position: relative;
-  top: -150px;
+  position: absolute;
+  top: 10px;
   line-height: 30px;
   width: 500px;
   left: -90px;
@@ -568,6 +568,7 @@ ul.clients .desc {
   border-radius: 10px;
   box-shadow: rgb(55, 63, 49) 5px 5px 93px -45px;
   display: none;
+  z-index: 10;
 }
 
 @media(max-width:875px) {
@@ -601,10 +602,14 @@ ul.clients .desc {
   margin-bottom: 50px;
 }
 
+ul.clients {
+  text-align: center;
+}
+
 ul.clients li {
-  display: block;
-  float: left;
-  width: 320px;
+  position: relative;
+  display: inline-block;
+  width: 315px;
   height: 150px;
   text-align: center;
   line-height: 150px;
