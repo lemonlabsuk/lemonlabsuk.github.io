@@ -7,7 +7,7 @@
     "AcmCertificateArn": {
       "Type": "String",
       "Description": "ARN of the SSL Certificate in AWS Certificate Manager"
-    },
+    }
   },
 
   "Mappings": {
