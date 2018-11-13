@@ -624,6 +624,10 @@ ul.clients .client-logo img {
   width: 250px;
 }
 
+ul.clients .client-logo {
+    color: #373f31;
+}
+
 ul.quotes {
   text-align: center;
   list-style-type: none;
