@@ -637,3 +637,7 @@ ul.quotes {
 ul.quotes li a {
   font-style: normal;
 }
+
+#contact-success {
+    margin: 200px 0 200px 0;
+}

@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<section id="contact-success">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h3>Thanks for getting in touch</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+              <p >We'll endeavour to reply as soon as possible</p>
+              <p>Going back to <a href="/">lemonlabs.io</a> <span id="countdown">shortly</span></p>
+              <script type="text/javascript">
+                  var redirectCountdownSecs = 3;
+                  function redirect() {
+                    if(redirectCountdownSecs == 0) {
+                      document.location.href = '/';
+                    } else {
+                      document.getElementById('countdown').innerHTML = 'in ' + redirectCountdownSecs + ' seconds';
+                      redirectCountdownSecs--;
+                      setTimeout(redirect, 1000);
+                    }
+                  }
+                  redirect();
+              </script>
+            </div>
+        </div>
+    </div>
+</section>
