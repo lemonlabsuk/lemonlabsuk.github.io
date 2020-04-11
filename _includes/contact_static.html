@@ -16,7 +16,8 @@
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2" style="border-top: 1px dotted #eee; padding-top: 10px;">
         <h3>By Email</h3>
-				<form  action="https://www.enformed.io/{{ site.enformedToken }}" method="POST" name="sentMessage" id="contactForm" novalidate>
+				<!-- <form id="contact-form" action="/contact" method="POST" name="sentMessage" id="contactForm" novalidate> -->
+				<form id="contact-form" action="https://www.enformed.io/{{ site.enformedToken }}" method="POST" name="sentMessage" id="contactForm" novalidate>
 					<div class="row control-group">
 						<div class="form-group col-xs-12 floating-label-form-group controls">
 							<label>Name</label>
@@ -52,3 +53,15 @@
 		</div>
 	</div>
 </section>
+
+<!-- recapture -->
+<script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script>
+<script>
+grecaptcha.ready(function() {
+	grecaptcha.execute('6LflZasUAAAAACXCv7EkzbhJR5w8i3qsyMnpi45U', {action: 'contact'}).then(function(token) {
+		var contactForm = document.getElementById('contact-form');
+		contactForm.action = contactForm.action + '?recapture=' + token;
+		document.getElementById('contact-submit-button').disabled = false;
+	});
+});
+</script>
