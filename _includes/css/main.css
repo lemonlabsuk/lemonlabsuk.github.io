@@ -641,3 +641,7 @@ ul.quotes li a {
 #contact-success {
     margin: 200px 0 200px 0;
 }
+
+.grecaptcha-badge {
+    visibility: hidden;
+}
