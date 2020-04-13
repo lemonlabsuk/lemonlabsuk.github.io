@@ -66,7 +66,7 @@
 grecaptcha.ready(function() {
 	grecaptcha.execute('6LflZasUAAAAACXCv7EkzbhJR5w8i3qsyMnpi45U', {action: 'contact'}).then(function(token) {
 		var contactForm = document.getElementById('contact-form');
-		contactForm.action = contactForm.action + '?recapture=' + token;
+		contactForm.action = contactForm.action + '?reCaptcha=' + token;
 		document.getElementById('contact-submit-button').disabled = false;
 	});
 });
